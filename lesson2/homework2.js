@@ -148,3 +148,20 @@ else
 {
     alert("You are obese");
 }
+/*Câu 1:
+        1. var và const là kiểu khai báo biến trong JS
+        2. Sự khác nhau giữa var và let:
+            - Phạm vi sử dụng của var có thể trong hoặc ngoài funcion, toàn cục.
+            - Phạm vi sử dụng của let là trong một block, xác định bằng cặp dấu {}.
+        3. Sự khác nhau giữa var và const:
+            - var có thể được cập nhật và khai báo lại trong phạm vi của nó, var có thể được khai báo mà không được khởi tạo.
+            - const không thể cập nhật hoặc khai báo lại, const phải được khởi tạo trong quá trình khai báo.
+        4. Trường hơp sử dụng:
+            - Dùng var khi cần truy cập biến nhiều lần.
+            - Dùng let khi cần biến truy cập một lần, hiệu quả trong một vòng lặp.
+            - Dùng const khi cần định nghĩa một hằng số.
+
+    Câu 2:
+        1. Boolean là một kiểu dữ liệu
+        2. Kết quả kiểu Boolean là một trong hai giá trị thường là "true" hoặc "false".
+/*
