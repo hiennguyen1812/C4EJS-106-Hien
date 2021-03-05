@@ -14,6 +14,10 @@
 //     console.log(i)
 // }
 //d
+// let sum = 0
 // let m = prompt("enter m ")
 // let n = prompt("enter n ")
-// for ( let i = m; i<= n ; i++)
+// for ( let i = m; i<= n ; i++){
+//     sum = sum + i(giai thua thi la *)
+// }
+// console.log(sum)
