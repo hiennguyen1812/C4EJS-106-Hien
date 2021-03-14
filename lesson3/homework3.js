@@ -1,21 +1,24 @@
-// ex1
+ex1
+cach1
 let a = 5;
 let b =6;
 [a,b] = [b,a]
 console.log(a,b)
-
-// ex2
+ex2
 const s = 'Hello beauty there';
 const a = Array(s);
 console.log(a)
 let d = s.split(" ");
 console.log(d)
-
-// ex3
+vidu
+let message = " Nguyen Si Hien"
+let arrMessage = message.split(",")
+console.log(arrMessage)
+ex3
 const a = [4,5,7,-2]
 console.log(...a)
 
-// bai4
+bai4
 let arr = ["jeans","black shirt","socks"]
 while(true){
     let ans = prompt("Hi, welcome to admin panel, what do you want?(C/R/U/D)")
@@ -57,7 +60,7 @@ while(true){
     }
 }
 
-// bai5
+bai5
 var num = prompt("Enter a squence of Number, separated by commas (,) ");
 num = num.split(",")//phan tach dau ,
 let sum = 0;
@@ -86,23 +89,23 @@ else
     alert(`${input} is NOT found in my array`);
 }
 
-//bai8
+bai8
 const flockOfSheep = [5,7,300,90,24,50,75]
 console.log("Hello, my name is Hien here is my sheep size")
 console.log(...flockOfSheep)
 console.log("\n")
-//bai8.2
+bai8.2
 let max = Math.max.apply(Math,flockOfSheep)
 console.log(`Now my biggest sheep has size ${max}, let's shave it`)
 console.log("\n")
-//bai8.3
+bai8.3
 let maxSheep = flockOfSheep.indexOf(max)
 flockOfSheep[maxSheep]=8
 console.log("After shearing, here is ma flock")
 console.log(...flockOfSheep)
 console.log("\n")
 
-//bai8.4
+bai8.4
 let new_flockOfSheep = []
 for(let i of flockOfSheep){
     i += 50 
@@ -123,21 +126,21 @@ console.log("After shearing, here is ma flock")
 console.log(...new_flockOfSheep)
 console.log("\n")
 
-//bai8.5
+bai8.5
 let month = Number(prompt("Nhap so thang ban muon"))
 for(let a = 2; a <= month; a++){
 //tim max
     let max2=Math.max.apply(Math,new_flockOfSheep)
     console.log(`Now my biggest sheep has size ${max2}, let's shave it`)
     console.log("\n")
-//tra max ve = 8
+tra max ve = 8
 let maxSheep2 = new_flockOfSheep.indexOf(max2)
 new_flockOfSheep[maxSheep2] = 8
 console.log("After shearing, here is my flock")
 console.log(...new_flockOfSheep)
 console.log("\n")
 
-//cong tat ca them 50
+cong tat ca them 50
 for(let b = 0; b< new_flockOfSheep.length;b++){
     new_flockOfSheep[b]+=50
 }
@@ -147,7 +150,7 @@ console.log(...new_flockOfSheep)
 console.log("\n")
 }
 
-//bai8.6:tinh tong kich thuoc va gia tien
+bai8.6:tinh tong kich thuoc va gia tien
 
 let sum = 0;
 for(let c of new_flockOfSheep)
@@ -157,3 +160,48 @@ for(let c of new_flockOfSheep)
 console.log(`My flock has size in total: ${sum}`);
 let tich = sum * 2;
 console.log(`I would get ${sum} * 2$ = ${tich}`);
+
+let tenNguoiyeucu = prompt("Nhap danh sach ten nguoi yeu cu vao: ")
+let nguoiCantim = prompt("Nhap vao ten nguoi can tim: ")
+console.log(tenNguoiyeucu)
+
+let arrDSNYC = tenNguoiyeucu.split(" ")
+let timThaykhong = arrDSNYC.indexOf(nguoiCantim)
+// -1 => khong tim thay
+// 1 => tim thay
+if(timThaykhong == -1){
+    console.log("khong co nyc ten nay ")
+}else{
+    console.log("co nguoi ten " + nguoiCantim)
+}
+
+let canNang = Number(prompt("Nhap danh sach can nang: "))
+let arrCanNang = canNang.split(",")
+
+let min = parseInt(arrCanNang[0]);
+
+for ( let i = 1; i <= arrCanNang.length; i++){
+    if (min > parseInt(arrCanNang[i])){
+        min = parseInt(arrCanNang[i])
+    }
+}
+console.log(min)
+
+let num = [2,10,3,11,17,22,33]
+//7
+//2,3,4,5,6
+for(let i = 0; i<num.length; i++){
+    if(num[i]<2){
+        continue;
+    }
+    let isNguyenTo = true
+    for(let j = 2; j <num[i];j++){
+        if(num[i]%j ==0){
+            isNguyenTo = false
+            break
+        }
+    }
+    if(isNguyenTo){
+        console.log(num[i]);
+    }
+}
