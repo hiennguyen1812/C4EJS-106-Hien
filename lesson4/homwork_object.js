@@ -54,21 +54,22 @@
 // }
 
 //bai5
-let tech = [
-    {id: 1 , name : "Xiaomi portable charger 20000mah", brand : "Xiaomi",price : 428,color : "While" , Category:"Chager"},
-    {id: 2 , name : "VSmart Active 1", brand : "VSmart",price : 5487,color : "Black" , Category:"Phone"},
-    {id: 3 , name : "IPhone X", brand : "Apple",price : 21490, color : "Gray", Category:"Phone"},
-    {id: 4 ,name : "Samsung Galaxy A9", brand : "Samsung",price : 8490,color : "Blue" , Category:"Phone"},
+// let tech = [
+//     {id: 1 , name : "Xiaomi portable charger 20000mah", brand : "Xiaomi",price : 428,color : "While" , Category:"Chager"},
+//     {id: 2 , name : "VSmart Active 1", brand : "VSmart",price : 5487,color : "Black" , Category:"Phone"},
+//     {id: 3 , name : "IPhone X", brand : "Apple",price : 21490, color : "Gray", Category:"Phone"},
+//     {id: 4 ,name : "Samsung Galaxy A9", brand : "Samsung",price : 8490,color : "Blue" , Category:"Phone"},
     
-];
-for(let tName of tech){
-    console.log(`Name : ${tName.name}`)
-    console.log(`Price : ${tName.price}`)
-    console.log("----------------------")
+// ];
+// for(let tName of tech){
+//     console.log(`Name : ${tName.name}`)
+//     console.log(`Price : ${tName.price}`)
+//     console.log("----------------------")
 
-}
+// }
 //5.2
-// for(let stt of tech){
+
+// for(let stt of tech){                //if(keyword in tech) kiem tra xem co ton tai trong obj khong
 //     console.log(`#${stt.id} : ${stt.name}`)
 //     console.log(`Price : ${stt.price}`)
 // }
@@ -88,116 +89,146 @@ for(let tName of tech){
 //     }
 // }
 //5.4
-tech[0].Providers = "Phukienzero Dientuccc"
-tech[1].Providers = "Tgdd Ddghn VhStore"
-tech[2].Providers = "Tgdd"
-tech[3].Providers = "Tgdd"
-for(x of tech){
-console.log(`${x.name} \n Price: ${x.price} \n Providers: ${x.Providers}`)}
+// tech[0].Providers = "Phukienzero Dientuccc"
+// tech[1].Providers = "Tgdd Ddghn VhStore"
+// tech[2].Providers = "Tgdd"
+// tech[3].Providers = "Tgdd"
+// for(x of tech){
+// console.log(`${x.name} \n Price: ${x.price} \n Providers: ${x.Providers}`)}
 
 //5.5
-let answer1 = prompt("Enter provider")
-for(let x of tech){
-    let check = x.Providers.indexOf(answer1)
-    if(check==-1){
-        console.log('Not found')
-    }
-    else{
-        console.log(`Name : ${x.name}`)
-        console.log(`Brand : ${x.brand}`)
-        console.log(`Price : ${x.price}`)
-        console.log(`Color : ${x.color}`)
-        console.log(`Category : ${x.Category}`)
-        console.log(`Providers : ${x.Providers}`)
-    }
-}
+// let answer1 = prompt("Enter provider")
+// for(let x of tech){
+//     let check = x.Providers.indexOf(answer1)
+//     if(check==-1){
+//         console.log('Not found')
+//     }
+//     else{
+//         console.log(`Name : ${x.name}`)
+//         console.log(`Brand : ${x.brand}`)
+//         console.log(`Price : ${x.price}`)
+//         console.log(`Color : ${x.color}`)
+//         console.log(`Category : ${x.Category}`)
+//         console.log(`Providers : ${x.Providers}`)
+//     }
+// }
 
-let tasks = [
-    {
-        id: 1,
-        name: 'HTML',
-        complete: false
-    },
-    {
-        id: 2,
-        name: 'CSS',
-        complete: false
-    },
-    {
-        id: 3,
-        name: 'Basics of JavaScript',
-        complete: false
-    },
-    {
-        id: 4,
-        name: 'Node Package Manager (npm)',
-        complete: false
-    },
-    {
-        id: 5,
-        name: 'Git',
-        complete: false
-    }
-];
+// let tasks = [
+//     {
+//         id: 1,
+//         name: 'HTML',
+//         complete: false
+//     },
+//     {
+//         id: 2,
+//         name: 'CSS',
+//         complete: false
+//     },
+//     {
+//         id: 3,
+//         name: 'Basics of JavaScript',
+//         complete: false
+//     },
+//     {
+//         id: 4,
+//         name: 'Node Package Manager (npm)',
+//         complete: false
+//     },
+//     {
+//         id: 5,
+//         name: 'Git',
+//         complete: false
+//     }
+// ];
 
 // 6.1: In ra console
-console.log('Hi there, this is your learning tasks to front-end developer career: ');
-for(let key of tasks) {
-    console.log(`${key.id}. ${key.name}`);
-    console.log(`   Complete: ${key.complete}`);
-}
-console.log('-----------------');
+// console.log('Hi there, this is your learning tasks to front-end developer career: ');
+// for(let key of tasks) {
+//     console.log(`${key.id}. ${key.name}`);
+//     console.log(`   Complete: ${key.complete}`);
+// }
+// console.log('-----------------');
 
-let inputUser = prompt('Enter your command (New, Delete, Update, Complete) ');
+// let inputUser = prompt('Enter your command (New, Delete, Update, Complete) ');
 // 6.2: Người dùng nhập thêm task
-if(inputUser == 'New') {
-    console.clear();
-    let nameOfNewTask = prompt('Enter new task: ');
-    nameOfNewTask = {
-        id: 6,
-        name: nameOfNewTask,
-        complete: false
-    }
-    tasks.push(nameOfNewTask);
-    console.log('Hi there, this is your learning tasks to front-end developer career: ');
-    for(let key of tasks) {
-        console.log(`${key.id}. ${key.name}`);
-        console.log(`   Complete: ${key.complete}`);
-    }
-    console.log('-------------------------------------------------------------------');
-}
+// if(inputUser == 'New') {
+//     console.clear();
+//     let nameOfNewTask = prompt('Enter new task: ');
+//     nameOfNewTask = {
+//         id: 6,
+//         name: nameOfNewTask,
+//         complete: false
+//     }
+//     tasks.push(nameOfNewTask);
+//     console.log('Hi there, this is your learning tasks to front-end developer career: ');
+//     for(let key of tasks) {
+//         console.log(`${key.id}. ${key.name}`);
+//         console.log(`   Complete: ${key.complete}`);
+//     }
+//     console.log('-------------------------------------------------------------------');
+// }
 // 6.3: Người dùng sửa task
-else if(inputUser == 'Update') {
-    let position = Number(prompt('Enter position:'));
-    let title = prompt('Enter new title');
-    tasks[position].name = title;
-    console.log('Hi there, this is your learning tasks to front-end developer career: ');
-    for(let key of tasks) {
-        console.log(`${key.id}. ${key.name}`);
-        console.log(`   Complete: ${key.complete}`);
-    }
-    console.log('-------------------------------------------------------------------');       
-}
+// else if(inputUser == 'Update') {
+//     let position = Number(prompt('Enter position:'));
+//     let title = prompt('Enter new title');
+//     tasks[position].name = title;
+//     console.log('Hi there, this is your learning tasks to front-end developer career: ');
+//     for(let key of tasks) {
+//         console.log(`${key.id}. ${key.name}`);
+//         console.log(`   Complete: ${key.complete}`);
+//     }
+//     console.log('-------------------------------------------------------------------');       
+// }
 
 // 6.4: Người dùng hoàn thành complete
-else if(inputUser == 'Complete') {
-    let position = Number(prompt('Enter position:'));
-    tasks[position - 1].complete = true;
-    console.log('Hi there, this is your learning tasks to front-end developer career: ');
-    for(let key of tasks) {
-        console.log(`${key.id}. ${key.name}`);
-        console.log(`   Complete: ${key.complete}`);
-    }
-    console.log('---------------------------');
-}
+// else if(inputUser == 'Complete') {
+//     let position = Number(prompt('Enter position:'));
+//     tasks[position - 1].complete = true;
+//     console.log('Hi there, this is your learning tasks to front-end developer career: ');
+//     for(let key of tasks) {
+//         console.log(`${key.id}. ${key.name}`);
+//         console.log(`   Complete: ${key.complete}`);
+//     }
+//     console.log('---------------------------');
+// }
 // 6.5: Xóa task
-else(inputUser == 'Delete');{
-    let delete_position = Number(prompt('Enter position: '));
-    tasks.splice(delete_position - 1, 1);
-    console.log('Hi there, this is your learning tasks to front-end developer career: ');
-    for(let key of tasks) {
-        console.log(`${key.id}. ${key.name}`);
-        console.log(`   Complete: ${key.complete}`);
-    }
-    console.log('--------------------------');
-}
+// else(inputUser == 'Delete');{
+//     let delete_position = Number(prompt('Enter position: '));
+//     tasks.splice(delete_position - 1, 1);
+//     console.log('Hi there, this is your learning tasks to front-end developer career: ');
+//     for(let key of tasks) {
+//         console.log(`${key.id}. ${key.name}`);
+//         console.log(`   Complete: ${key.complete}`);
+//     }
+//     console.log('--------------------------');
+// }
+
+
+// console.log(Math.random())
+
+// let arr = [2,5,6,9,10]
+// let show = arr[Math.floor(Math.random()* arr.length)]
+// console.log(show)
+
+/* ten website : website khu du lich
+logo
+    trang chu
+        hien ra dia diem va tin tuc, cac bai` bao' lien quan
+    gioi thieu
+        gioi thieu ve tung noi va nhung noi dep nhat ma du khach nen den
+        van hoa am thuc, thoi gian dong va mo cua
+    trai nghiem
+        ban do
+        he thong giai tri
+        hoat dong giai tri
+        khong gian nghi duong
+        khong gian van hoa
+        khong gian am thuc
+    ban do
+        bao quat dia diem(co the zoom)
+        
+    tin tuc
+    cac bai bao lien quan
+    tro giup
+        sdt lien he
+    mua ve'
