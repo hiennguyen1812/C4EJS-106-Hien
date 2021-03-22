@@ -1,0 +1,19 @@
+*{
+    color: blue;
+    font-size:  120px;
+}
+
+.header {
+    background-color: brown;
+    color: aliceblue;
+}
+
+div {
+    background-color: black;
+}
+
+my-name{
+    background-color: blueviolet;
+}
+
+/* CCC SELECTOR /*
